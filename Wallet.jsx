@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/income.css'
 
-const Wallet = ({item}) => (
+const Wallet: () => React$Node = ({item}) => (
     <li aria-hidden="false">
         <div className={['income-item', item.theme].join(" ")}>
             <div className="income-item-title">

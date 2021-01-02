@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/carousel.css'
 
-const Carousel = ({children, style, prev, next, childrenType}) => (
+const Carousel: () => React$Node = ({children, style, prev, next, childrenType}) => (
     <div className="carousel">
         <div className="box" >
             <ul className="cards" style={style}>

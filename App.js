@@ -79,21 +79,11 @@ const App: () => React$Node = () => {
           style={styles.scrollView}>
           <Header />
           <View style={styles.body}>
-            <CardWidget
-              style={{
-                gridColumn: '1/2',
-                gridRow: '1/2',
-                boxShadow: 'none',
-                background: 'none',
-              }}
-              title="Мои кошельки"
-              titleFil="#000000">
-              <Carousel childrenType="controls">
+
                 {wallets.map((child) => (
                   <Wallet item={child} />
                 ))}
-              </Carousel>
-            </CardWidget>
+
           </View>
         </ScrollView>
       </SafeAreaView>
