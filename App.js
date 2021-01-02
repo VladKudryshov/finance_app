@@ -7,19 +7,19 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  StatusBar,
-} from 'react-native';
+  import {
+    SafeAreaView,
+    StyleSheet,
+    ScrollView,
+    View,
+    StatusBar,
+  } from 'react-native';
 
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 
 import CardWidget from './CardWidget.jsx';
 import Carousel from './Carousel.jsx';
-import Wallet from './Wallet.jsx';
+import Wallet from './Wallet.js';
 
 const wallets = [
   {
