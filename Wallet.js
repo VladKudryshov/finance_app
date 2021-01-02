@@ -4,16 +4,17 @@ import {
     Text,
     View,
 } from 'react-native';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const Wallet = ({item}) => (
-    <li aria-hidden="false">
+    <View aria-hidden="false">
         <View className={['income-item', item.theme].join(" ")}>
             <View className="income-item-title">
                 <View className="income-item-name left"><Text>{item.name}</Text></View>
                 <View className="income-item-type right">
                     {item.type === 'visa'
-                        ? <i className="fab fa-cc-visa"/>
-                        : <i className="fas fa-piggy-bank"/>}
+                        ? <FontAwesomeIcon icon={["fab", "fa-cc-visa"]} />
+                        : <FontAwesomeIcon icon={["fas", "fa-piggy-bank"]}/>}
                 </View>
             </View>
             <View className="amount">
@@ -36,7 +37,7 @@ const Wallet = ({item}) => (
                 </View>
             </View>
         </View>
-    </li>
+    </View>
 );
 
 
