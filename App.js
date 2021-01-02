@@ -15,59 +15,59 @@ import {
   StatusBar,
 } from 'react-native';
 
-import {Header,Colors } from 'react-native/Libraries/NewAppScreen';
+import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 
-import CardWidget from './CardWidget';
-import Carousel from './Carousel';
-import Wallet from './Wallet';
+import CardWidget from './CardWidget.jsx';
+import Carousel from './Carousel.jsx';
+import Wallet from './Wallet.jsx';
 
 const wallets = [
   {
-    name: "Зарплата",
+    name: 'Зарплата',
     type: 'visa',
     balance: 1234,
     currency: 'BYN',
     income: 1231,
     spend: 123,
-    theme: 'theme1'
+    theme: 'theme1',
   },
   {
-    name: "Копилка",
+    name: 'Копилка',
     type: 'Копилка',
     balance: 1234,
     currency: 'BYN',
     income: 1231,
     spend: 123,
-    theme: 'theme6'
+    theme: 'theme6',
   },
   {
-    name: "Копилка",
+    name: 'Копилка',
     type: 'Копилка',
     balance: 1234,
     currency: 'BYN',
     income: 1231,
     spend: 123,
-    theme: 'theme6'
+    theme: 'theme6',
   },
   {
-    name: "Копилка",
+    name: 'Копилка',
     type: 'Копилка',
     balance: 1234,
     currency: 'BYN',
     income: 1231,
     spend: 123,
-    theme: 'theme6'
+    theme: 'theme6',
   },
   {
-    name: "Копилка",
+    name: 'Копилка',
     type: 'Копилка',
     balance: 1234,
     currency: 'BYN',
     income: 1231,
     spend: 123,
-    theme: 'theme6'
-  }
-]
+    theme: 'theme6',
+  },
+];
 
 const App: () => React$Node = () => {
   return (
@@ -79,10 +79,19 @@ const App: () => React$Node = () => {
           style={styles.scrollView}>
           <Header />
           <View style={styles.body}>
-            <CardWidget style={{gridColumn: '1/2', gridRow: '1/2', boxShadow: 'none', background: 'none'}}
-                        title="Мои кошельки" titleFil="#000000">
+            <CardWidget
+              style={{
+                gridColumn: '1/2',
+                gridRow: '1/2',
+                boxShadow: 'none',
+                background: 'none',
+              }}
+              title="Мои кошельки"
+              titleFil="#000000">
               <Carousel childrenType="controls">
-                {wallets.map(child=><Wallet item={child}/>)}
+                {wallets.map((child) => (
+                  <Wallet item={child} />
+                ))}
               </Carousel>
             </CardWidget>
           </View>
