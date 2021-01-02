@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.table {
+    width: 1050px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.table-row, .table-head{
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 10px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    line-height: 3;
+    min-height: 52px;
+    max-height: 52px;
+    grid-template-columns: 100px 200px 100px 350px 150px auto;
+}
+
+.table-body {
+    grid-template-rows: 1fr;
+}
+
+.tooltip-container > .value{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: inherit;
+    white-space: nowrap;
+}
+
+.tooltip-container{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background: #393939;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 8pt;
+    z-index: 99999;
+    line-height: 1;
+}
+
+.value:hover + .tooltip {
+    display: block;
+}
+
+.table-cell > .value {
+    display: block;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions > li{
+    flex: 1;
+}

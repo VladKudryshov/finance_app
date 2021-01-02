@@ -1,0 +1,29 @@
+.menu {
+    height: 100vh;
+    background-color: #272B2F;
+}
+
+.account-menu-link {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 10px 20px;
+    color: #B0ACAE;
+}
+
+.account-menu-link:hover {
+    cursor: pointer;
+    background: #333945;
+    color: #FFFFFF;
+}
+
+.active {
+    background: #333d45;
+    color: #FFFFFF;
+}
+
+.wrapper-component{
+    padding: 20px;
+}

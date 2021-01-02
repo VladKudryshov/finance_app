@@ -1,0 +1,77 @@
+.cards {
+    width: 5215%;
+    position: relative;
+    transition-duration: 0.08s;
+}
+
+@keyframes fontbulger {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    30% {
+        transform: translate3d(960px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.box {
+    width: 950px;
+    overflow: hidden;
+}
+
+.control-next {
+    background: url("/images/next.svg") no-repeat;
+    top: 45%;
+    right: -25px;
+}
+
+.control-prev {
+    background: url("/images/prev.svg") no-repeat;
+    left: -25px;
+    top: 45%;
+}
+
+.cards > li {
+    padding: 0;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.carousel{
+    width: max-content;
+    position: relative;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    width: 32px;
+    height: 32px;
+}
+
+.min-controls{
+    width: 16px;
+    height: 16px;
+}
+
+.controls a, .min-controls a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: inherit;
+    height: inherit;
+    text-indent: -9999px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.min-controls a {
+    margin-top: -8px;
+}
