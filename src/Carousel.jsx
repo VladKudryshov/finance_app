@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/carousel.css'
+import '../styles/carousel.css'
 
 const Carousel: () => React$Node = ({children, style, prev, next, childrenType}) => (
     <div className="carousel">

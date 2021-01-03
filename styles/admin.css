@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 40px auto;
     padding: 10px 20px;
-    color: #B0ACAE;
+    color: inherit;
 }
 
 .account-menu-link:hover {

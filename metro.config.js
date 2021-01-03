@@ -11,3 +11,7 @@ module.exports = {
     },
   },
 };
+
+module.exports = {
+  assets: ["./assets/fonts"]
+}

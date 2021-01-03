@@ -23,6 +23,7 @@
 .theme1 {
     background: #171717;
     color: #ffffff;
+    justify-content: space-between;
 }
 
 .theme2 {

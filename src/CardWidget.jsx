@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/history-table.css'
+import '../styles/history-table.css'
 
 const CardWidget = ({children, title, style, titleFil}) => (
     <div className="card" style={style}>
