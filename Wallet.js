@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../styles/income.css';
 import {
     Text,
     View,
@@ -9,7 +8,6 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faCcVisa} from '@fortawesome/free-brands-svg-icons';
 import {faPiggyBank} from '@fortawesome/free-solid-svg-icons';
-import {useFonts, Roboto_100Thin} from '@expo-google-fonts/roboto'
 
 class Wallet extends Component {
     constructor(props) {
@@ -17,6 +15,7 @@ class Wallet extends Component {
 
     }
     render() {
+
         return <View aria-hidden="false">
             <View style={[styles.incomeItem, styles.theme1]}>
                 <View style = {[styles.incomeItemTitle, styles.flexRow]}>
@@ -51,6 +50,8 @@ class Wallet extends Component {
     }
 }
 
+
+
 const styles = StyleSheet.create({
     incomeItem: {
         borderRadius: 20,
@@ -67,6 +68,8 @@ const styles = StyleSheet.create({
         shadowRadius: 10,
         elevation: 3,
         justifyContent: 'space-between'
+
+
     },
     theme1: {
         backgroundColor: '#171717',
@@ -99,7 +102,7 @@ const styles = StyleSheet.create({
     value: {
         fontSize: 25,
         fontWeight: 700,
-        fontFamily: 'Roboto'
+        fontFamily: 'Roboto_100Thin'
     },
     smallValue: {
         fontSize: 15,
